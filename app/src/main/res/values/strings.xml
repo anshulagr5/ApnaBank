@@ -13,7 +13,7 @@
     <string name="send_to">Send To</string>
     <string name="enter_amount">Enter Amount</string>
     <string name="customer_details">Customer Details</string>
-    <string name="tranfer">Tranfer</string>
+    <string name="transfer">Transfer</string>
     <string name="amountWarning">Please Enter the Amount!</string>
     <string name="amountLimitWarning">Not Enough Balance!</string>
     <string name="transaction">Transaction History</string>
