@@ -1,27 +1,37 @@
 package com.anshul.apnabank.Model;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class Transaction {
-    private String senderName;
-    private String receiverName;
+public class Transaction implements Serializable {
+    private int id;
+    private String senderAccountId;
+    private String receiverAccountId;
     private int amount;
     private Date date;
 
-    public String getSenderName() {
-        return senderName;
+    public int getId() {
+        return id;
     }
 
-    public void setSenderName(String senderName) {
-        this.senderName = senderName;
+    public void setId(int id) {
+        this.id = id;
     }
 
-    public String getReceiverName() {
-        return receiverName;
+    public String getSenderAccountId() {
+        return senderAccountId;
     }
 
-    public void setReceiverName(String receiverName) {
-        this.receiverName = receiverName;
+    public void setSenderAccountId(String senderAccountId) {
+        this.senderAccountId = senderAccountId;
+    }
+
+    public String getReceiverAccountId() {
+        return receiverAccountId;
+    }
+
+    public void setReceiverAccountId(String receiverAccountId) {
+        this.receiverAccountId = receiverAccountId;
     }
 
     public int getAmount() {

@@ -5,7 +5,6 @@ import java.util.List;
 
 public class TransactionList {
     private static List<Transaction> transactionList = new ArrayList<>();
-
     public static void addToList(Transaction transaction){
         transactionList.add(transaction);
     }

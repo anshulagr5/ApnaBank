@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.anshul.apnabank">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
 
     <application
         android:allowBackup="true"
@@ -10,9 +11,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ApnaBank">
         <activity
-            android:name=".SplashScreen"
-            android:screenOrientation="portrait"
-            android:exported="true" >
+            android:name=".TransactionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddCustomerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreenActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -20,21 +27,21 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".TransactionDetails"
-            android:screenOrientation="portrait"
-            android:exported="true" />
+            android:name=".TransactionDetailsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
-            android:name=".CustomerList"
-            android:screenOrientation="portrait"
-            android:exported="true" />
+            android:name=".CustomerListActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
-            android:name=".CustomerDetails"
-            android:screenOrientation="portrait"
-            android:exported="true" />
+            android:name=".CustomerDetailsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".MainActivity"
-            android:screenOrientation="portrait"
-            android:exported="false"/>
+            android:exported="false"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

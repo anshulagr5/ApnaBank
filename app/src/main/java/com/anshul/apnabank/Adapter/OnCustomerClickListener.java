@@ -1,8 +1,8 @@
 package com.anshul.apnabank.Adapter;
 
 
-import com.anshul.apnabank.Model.CustomerDetails;
+import com.anshul.apnabank.Model.Customer;
 
 public interface OnCustomerClickListener {
-    void onCustomerClick(CustomerDetails customer);
+    void onCustomerClick(Customer customer);
 }
